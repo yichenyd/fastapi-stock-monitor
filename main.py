@@ -44,9 +44,9 @@ def fetch_and_store_data():
                 db.add(record)
                 print(f"   -> Saved {ticker}: {round(price, 2)}")
         db.commit()
-        print("✅ Batch update completed.")
+        print("Batch update completed.")
     except Exception as e:
-        print(f"❌ Job failed: {e}")
+        print(f"Job failed: {e}")
     finally:
         db.close()
 
